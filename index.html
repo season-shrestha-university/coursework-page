@@ -12,86 +12,186 @@
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body>
-    <header>
-      <figure>
-        <img src="./images/me.jpg" alt="Profile photo of Season Shrestha" />
+  <body class="page">
+    <header class="site-header">
+      <figure class="site-header__figure">
+        <img
+          class="site-header__image"
+          src="./images/me.jpg"
+          alt="Profile photo of Season Shrestha"
+        />
       </figure>
-      <div>
-        <h1>
-          <span>Season</span>
-          <span>Shrestha</span>
+      <div class="site-header__content">
+        <h1 class="site-header__title">
+          <span class="site-header__title-line">Season</span>
+          <span class="site-header__title-line">Shrestha</span>
         </h1>
-        <p>
-          A curious mind shaping ideas into digital experiences that connect,
-          inspire, and tell quiet stories.
+        <p class="site-header__intro">
+          MA Web Design and Content Planning student at the University of
+          Greenwich. This website contains coursework and projects produced
+          during the programme.
         </p>
-        <p>Sharing my <a href="/wp-blog/">Journal</a> with you.</p>
+        <p class="site-header__journal">
+          Sharing my
+          <a class="link link--accent" href="/wp-blog/">Journal</a> with you.
+        </p>
       </div>
     </header>
 
-    <main>
-      <aside>
-        <p>Coursework</p>
+    <main class="page-main">
+      <aside class="page-main__sidebar">
+        <p class="page-main__sidebar-label">Coursework</p>
       </aside>
 
-      <section aria-labelledby="c-design-web">
-        <details open>
-          <summary>
-            <h2 id="c-design-web">Design for Web Content</h2>
+      <section class="coursework" aria-labelledby="c-design-web">
+        <details
+          class="coursework__details coursework__details--open coursework__details--has-latest"
+          open
+        >
+          <summary class="coursework__summary">
+            <h2 id="c-design-web" class="coursework__heading">
+              Design for Web Content
+            </h2>
           </summary>
-          <ul>
-            <li>
+          <ul class="coursework__list">
+            <li class="coursework__item coursework__item--major">
               <a
+                class="link coursework__link"
                 href="/coursework/design-for-web-content/three-designed-objects/"
                 >Three design objects</a
               >
+              <time class="coursework__date" datetime="2024-10-15"
+                >15 Oct 2024</time
+              >
+              <span class="coursework__badge" aria-label="Marked submission"
+                >Marked</span
+              >
             </li>
-            <li>
-              <a href="/coursework/design-for-web-content/how-type-works/"
+            <li class="coursework__item">
+              <a
+                class="link coursework__link"
+                href="/coursework/design-for-web-content/how-type-works/"
                 >How Type Works</a
               >
             </li>
-            <li>
-              <a href="/coursework/design-for-web-content/the-shape-of-design/"
+            <li class="coursework__item">
+              <a
+                class="link coursework__link"
+                href="/coursework/design-for-web-content/the-shape-of-design/"
                 >The Shape of Design</a
               >
             </li>
-          </ul>
-        </details>
-        <details>
-          <summary>
-            <h2 id="c-applied-art">Applied Art for the Web</h2>
-          </summary>
-          <ul>
-            <li>
-              <a href="/coursework/applied-art-for-the-web/type-play/"
-                >Typesetting Exploration</a
+            <li class="coursework__item coursework__item--major">
+              <a
+                class="link coursework__link"
+                href="/coursework/design-for-web-content/alfs-cycle/index.html"
+                >Small Business Website: Alf's Cycle</a
+              >
+              <time class="coursework__date" datetime="2025-01-08"
+                >8 Jan 2025</time
+              >
+              <span class="coursework__badge" aria-label="Marked submission"
+                >Marked</span
+              >
+            </li>
+            <li
+              class="coursework__item coursework__item--major coursework__item--latest"
+            >
+              <a
+                class="link coursework__link"
+                href="https://season-shrestha.uk/wp-blog/reflective-write-up-alfs-cycle/"
+                >Reflective Write-up: Alf's Cycle</a
+              >
+              <time class="coursework__date" datetime="2025-01-22"
+                >22 Jan 2025</time
+              >
+              <span class="coursework__badge" aria-label="Marked submission"
+                >Marked</span
               >
             </li>
           </ul>
         </details>
-        <details>
-          <summary>
-            <h2>Major Project</h2>
+        <details class="coursework__details">
+          <summary class="coursework__summary">
+            <h2 id="c-applied-art" class="coursework__heading">
+              Applied Art for the Web
+            </h2>
           </summary>
-          <ul>
-            <li>
-              <a href="#">............</a>
+          <ul class="coursework__list">
+            <li class="coursework__item">
+              <a
+                class="link coursework__link"
+                href="/coursework/applied-art-for-the-web/type-play/"
+                >Typesetting Exploration</a
+              >
+            </li>
+            <li class="coursework__item coursework__item--major">
+              <a
+                class="link coursework__link"
+                href="/coursework/applied-art-for-the-web/typesetting-literature/"
+                >Typesetting Literature</a
+              >
+              <time class="coursework__date" datetime="2024-12-18"
+                >18 Dec 2024</time
+              >
+              <span class="coursework__badge" aria-label="Marked submission"
+                >Marked</span
+              >
+            </li>
+          </ul>
+        </details>
+        <details class="coursework__details">
+          <summary class="coursework__summary">
+            <h2 class="coursework__heading">UX Design</h2>
+          </summary>
+          <ul class="coursework__list">
+            <li class="coursework__item coursework__item--major">
+              <a
+                class="link coursework__link"
+                href="https://season-shrestha.uk/wp-blog/ux-research-design-planning-document-for-major-project"
+                >UX Research & Design Planning Document</a
+              >
+              <time class="coursework__date" datetime="2025-01-15"
+                >15 Jan 2025</time
+              >
+              <span class="coursework__badge" aria-label="Marked submission"
+                >Marked</span
+              >
+            </li>
+          </ul>
+        </details>
+        <details class="coursework__details">
+          <summary class="coursework__summary">
+            <h2 class="coursework__heading">
+              Content Management
+              <span
+                class="coursework__latest-badge"
+                aria-label="This section has the latest submission"
+                >Latest</span
+              >
+            </h2>
+          </summary>
+          <ul class="coursework__list">
+            <li class="coursework__item">
+              <a
+                class="link coursework__link--latest"
+                href="https://season-shrestha.uk/wp-blog/ux-research-design-planning-document-for-major-project"
+                >Javascript Exercise: Week 2</a
+              >
             </li>
           </ul>
         </details>
       </section>
     </main>
-    <footer>
-      <p>
-        <a href="/wip-journal/">psst... over here.</a>
+    <footer class="site-footer">
+      <p class="site-footer__text">
+        <a class="link" href="/wip-journal/">psst... over here.</a>
       </p>
-      <p class="footer-contact">
+      <p class="site-footer__contact">
         <svg
           width="120"
           height="100"
-          viewBox="0 0 120 100"
+          viewBox="0 0 80 110"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -132,7 +232,9 @@
           </g>
         </svg>
 
-        <a class="footer-contact__link" href="mailto:season.shrestha@gmail.com"
+        <a
+          class="link site-footer__contact-link"
+          href="mailto:czon.herald75@gmail.com"
           >season.shrestha@gmail.com</a
         >
       </p>
