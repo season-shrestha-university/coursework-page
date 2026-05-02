@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alf's Cycle - Bikes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+   >
+  </head>
+
+  <body>
+    <header>
+      <nav aria-label="Main">
+        <!-- Logo -->
+        <a href="./index.html" aria-label="Alf's Cycle homepage">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="85"
+            height="46"
+            fill="none"
+            viewBox="0 0 85 46"
+          >
+            <path
+              fill="#000"
+              d="m4 35-3-1-1-3 1-2v-1l1-1-1 3 1 2h2l6-1 7-5 6-5-12 1-1 1v2H9l-1-1 1-2 1-1 6-2h9L37 7l5-2h-3l-9 1-3 2-1 1v4h-1l-1-2V9l1-2 4-2 3-1h13l6-2h1l-1 1h-2l-1 1-2 3-8 13-3 9-1 2 1 2 1-1h2l1-2 4-4v1l-4 4-3 2h-1l-1 1-2-1-1-3 1-3 1-3L44 5h-2l-7 5-8 9h7l2-1-1 1-1 1-1 1h-8l-10 9-6 3zm42-2h-2l-1-2 1-4 1-2 4-8 2-5 6-9 1-1 2-1 2-1h1v2l-1 3-2 3-6 9-7 6-2 4v3l1 1 1 1h1l2-1 2-2 3-4v1l-3 4-3 2zm2-12 9-11 4-6V1l-2 1-2 4zm-7 24h-3l-2-2v-3h1l2 3 4 1 3-1 4-3 6-12 3-8h-3l1-1 2-1h1l7-13 3-3 6-2 1 1 1 1v2h-1l-1-2h-2l-4 1-3 5-5 10h6l-1 1-3 1h-2l-3 5-8 15-4 4zM72 8zl2-4V3l-1-1V1h1l1-1 1 1v1l-1 4zm4 26h-2l-2-1-1-2v-2l1-1h1-1v1l1 2 1 2zh2l1-1 1-2v-1l-2-2-1-2-1-1v-1l-3 4 1-2 1-2 2-2 1-1 1-2h4l1 2v1l-1 2v-1l-1-2v-1h-1l-2 1-1 1v1l1 2 2 2 1 3-1 2-2 2z"
+           />
+          </svg>
+        </a>
+
+        <!-- Contact information -->
+        <aside aria-label="Contact information">
+          <output aria-live="polite">Workshop is open</output>
+          <a href="tel:+447484000000" aria-label="Call Alf's Cycle workshop">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="#000"
+                d="m20 21-6-1A18 18 0 0 1 4 10L3 4l1-1h5v1l1 3v1H9l-2 3 1 2 5 4 2-2 1-1h1l3 1h1v5zM6 9l2-2-1-2H5zm9 9 4 1v-2l-2-1z"
+             />
+            </svg>
+          </a>
+        </aside>
+
+        <!-- Navigation menu -->
+        <input
+          type="checkbox"
+          id="menu-toggle"
+          class="menu-btn"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+       >
+        <label for="menu-toggle" class="menu-icon">
+          <span class="navicon" aria-hidden="true"></span>
+        </label>
+
+        <!-- Navigation menu list -->
+        <ul id="main-menu" role="menu">
+          <li role="none">
+            <a href="./index.html" role="menuitem">Home</a>
+          </li>
+          <li role="none">
+            <a href="./bikes.html" role="menuitem">Bikes</a>
+          </li>
+          <li role="none">
+            <a href="./accessories.html" role="menuitem">Accessories</a>
+          </li>
+
+          <li role="none">
+            <a href="./event.html" role="menuitem">Events</a>
+          </li>
+          <li role="none">
+            <a href="./about.html" role="menuitem">About</a>
+          </li>
+          <li role="none">
+            <a href="./contact.html" role="menuitem">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <nav aria-label="Breadcrumb">
+      <ol>
+        <li><a href="./index.html">Home</a></li>
+        <li aria-current="page">Bikes</li>
+      </ol>
+    </nav>
+
+    <main>
+      <section>
+        <h2>Vintage Heart celebrates classic cycles</h2>
+        <div class="articles-grid">
+          <article>
+            <figure>
+              <img
+                width="304"
+                height="405"
+                src="./images/bikes/classic-collection/clc-the-roadseter.webp"
+                alt="The roadster - Timeless British classic bicycle for comfortable everyday rides"
+             >
+              <figcaption>
+                <h3>The Roadster</h3>
+                <p>
+                  A timeless British classic built for comfort and everyday
+                  reliability. Perfect for steady rides through town and
+                  countryside lanes.
+                </p>
+                <div>
+                  <span>#Type City</span>
+                  <span>#Frame Steel</span>
+                  <span>#Size Medium</span>
+                </div>
+              </figcaption>
+            </figure>
+            <a href="./inner-bike.html" class="ghost-link">View catalogue</a>
+          </article>
+          <article>
+            <figure>
+              <img
+                width="304"
+                height="405"
+                src="./images/bikes/classic-collection/clc-the-madam.webp"
+                alt="The Madam bicycle, an elegant upright bike designed for relaxed and comfortable rides."
+             >
+              <figcaption>
+                <h3>The Madam</h3>
+                <p>
+                  Elegant, upright, and designed for a relaxed riding posture.
+                  For riders who value tradition, style, and ease and comfort.
+                </p>
+                <div>
+                  <span>#Type Hybrid</span>
+                  <span>#Frame Alloy</span>
+                  <span>#Size Medium</span>
+                </div>
+              </figcaption>
+            </figure>
+            <a href="./inner-bike.html" class="ghost-link">View catalogue</a>
+          </article>
+          <article>
+            <figure>
+              <img
+                width="304"
+                height="405"
+                src="./images/bikes/classic-collection/clc-the-gentlemen.webp"
+                alt="The Gentlemen bicycle, a vintage-inspired bike built for practical everyday riding."
+             >
+              <figcaption>
+                <h3>The Heritage Commuter</h3>
+                <p>
+                  Vintage character with modern-day practicality. Built for
+                  everyday riding without losing its soul.
+                </p>
+                <div>
+                  <span>#Type Hybrid</span>
+                  <span>#Frame Alloy</span>
+                  <span>#Size Medium</span>
+                </div>
+              </figcaption>
+            </figure>
+            <a href="./inner-bike.html" class="ghost-link">View catalogue</a>
+          </article>
+          <article>
+            <figure>
+              <img
+                width="304"
+                height="405"
+                src="./images/bikes/classic-collection/clc-the-vintage-tourer.webp"
+                alt="The Vintage Tourer bicycle, a traditional-style touring bike ideal for relaxed weekend countryside rides."
+             >
+              <figcaption>
+                <h3>The Vintage Tourer</h3>
+                <p>
+                  Designed for long, unhurried rides with a nod to traditional
+                  touring bicycles. The geometry makes it ideal for weekend
+                  countryside escapes.
+                </p>
+                <div>
+                  <span>#Type Touring</span>
+                  <span>#Frame Steel</span>
+                  <span>#Size Large</span>
+                </div>
+              </figcaption>
+            </figure>
+            <a href="./inner-bike.html" class="ghost-link">View catalogue</a>
+          </article>
+          <article>
+            <figure>
+              <img
+                width="304"
+                height="405"
+                src="./images/bikes/classic-collection/clc-the-contentinental-road-classic.webp"
+                alt="The Continental Road Classic bicycle, a vintage-inspired European road bike with a smooth and responsive ride."
+             >
+              <figcaption>
+                <h3>The Continental Road Classic</h3>
+                <p>
+                  Influenced by vintage European road bikes, this model offers a
+                  smooth and responsive ride while preserving old-school charm.
+                </p>
+                <div>
+                  <span>#Type Road</span>
+                  <span>#Frame Steel</span>
+                  <span>#Size Medium</span>
+                </div>
+              </figcaption>
+            </figure>
+            <a href="./inner-bike.html" class="ghost-link">View catalogue</a>
+          </article>
+        </div>
+      </section>
+      <section>
+        <h2>Performance, Redefined</h2>
+        <div class="articles-grid">
+          <article>
+            <figure>
+              <img
+                width="304"
+                height="405"
+                src="./images/bikes/modern-collection/mod-flux-carbon.webp"
+                alt="Urban Fold Pro folding bike – compact, lightweight, and easy to store, ideal for commuters"
+             >
+              <figcaption>
+                <h3>Urban Fold Pro</h3>
+                <p>
+                  Smart folding design for commuters on the move. Compact,
+                  lightweight, light weight frame and quick to store.
+                </p>
+              </figcaption>
+            </figure>
+            <a href="./inner-bike.html" class="ghost-link">View catalogue</a>
+          </article>
+          <article>
+            <figure>
+              <img
+                width="304"
+                height="405"
+                src="./images/bikes/modern-collection/mod-urban-gllide.webp"
+                alt="The Urban Glide bicycle, a sleek, lightweight bike for fast city riding and everyday convenience."
+             >
+              <figcaption>
+                <h3>The Urban Glide</h3>
+                <p>
+                  A sleek, modern bike designed for fast city movement and
+                  everyday convenience. Lightweight and responsive for modern
+                  urban life.
+                </p>
+                <div>
+                  <span>#Type City</span>
+                  <span>#Frame Alloy</span>
+                  <span>#Size Medium</span>
+                </div>
+              </figcaption>
+            </figure>
+            <a href="./inner-bike.html" class="ghost-link">View catalogue</a>
+          </article>
+          <article>
+            <figure>
+              <img
+                width="304"
+                height="405"
+                src="./images/bikes/modern-collection/mod-the-metro-commuter.webp"
+                alt="The Metro Commuter bicycle, designed for daily commuting with comfort and smooth handling."
+             >
+              <figcaption>
+                <h3>The Metro Commuter</h3>
+                <p>
+                  Built for efficiency and comfort during daily commutes. A
+                  practical, no-nonsense ride with modern styling and smooth
+                  handling.
+                </p>
+                <div>
+                  <span>#Type Hybrid</span>
+                  <span>#Frame Alloy</span>
+                  <span>#Size Medium</span>
+                </div>
+              </figcaption>
+            </figure>
+            <a href="./inner-bike.html" class="ghost-link">View catalogue</a>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="shop-details">
+      <h2>Shop Details</h2>
+      <div>
+        <dl>
+          <div>
+            <dt>Address</dt>
+            <dd>
+              <a href="https://maps.app.goo.gl/eeEb5aoYVwoQsBQ5A"
+                >99-101 Cheriton High Street, Folkstone</a
+              >
+            </dd>
+          </div>
+          <div>
+            <dt>Phone & Email</dt>
+            <dd><a href="tel:+447484000000">(07129 091 098)</a></dd>
+            <dd>
+              <a href="mailto:czon.herald75@gmail.com">alfscycle@email.com</a>
+            </dd>
+          </div>
+          <div>
+            <dt>Opening Hours</dt>
+            <dd>Mon-Fri: 9am - 6pm</dd>
+            <dd>Saturday: 10am - 4pm</dd>
+            <dd>Sunday: Closed</dd>
+          </div>
+        </dl>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.5072226649354!2d1.175423476468099!3d51.08064607171934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47debed08b58212d%3A0xbd6fa5ba709e4d91!2sAlford%20Bros!5e0!3m2!1sen!2suk!4v1769078205176!5m2!1sen!2suk"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </footer>
+  </body>
+</html>
